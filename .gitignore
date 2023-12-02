@@ -1,5 +1,5 @@
 pkg
 src
-*tar.gz*
-*tar.zst*
-*.zip
+*tar.gz
+*tar.zst
+*tar.zst.sig
