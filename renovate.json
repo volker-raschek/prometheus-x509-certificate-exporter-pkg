@@ -11,5 +11,15 @@
     }
   ],
   "rebaseLabel": "renovate/rebase",
-  "rebaseWhen": "behind-base-branch"
+  "rebaseWhen": "behind-base-branch",
+  "regexManagers": [
+    {
+      "description": "Update PKGBUILD version",
+      "fileMatch": [ "(^|/)PKGBUILD$" ],
+      "matchStrings": [
+        "pkgver=(?<currentValue>.*) # renovate: datasource=(?<datasource>.*) depName=(?<depName>.*)( lookupName=(?<lookupName>.*))?( versioning=(?<versioning>.*))?"
+      ],
+      "extractVersionTemplate": "^v?(?<version>.*)$"
+    }
+  ]
 }
