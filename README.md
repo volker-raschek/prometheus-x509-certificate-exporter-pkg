@@ -1,7 +1,6 @@
 # prometheus-x509-certificate-exporter
 
 ![AUR version](https://img.shields.io/aur/version/prometheus-x509-certificate-exporter?label=AUR)
-[![Build Status](https://drone.cryptic.systems/api/badges/volker.raschek/prometheus-x509-certificate-exporter-pkg/status.svg)](https://drone.cryptic.systems/volker.raschek/prometheus-x509-certificate-exporter-pkg)
 ![AUR votes](https://img.shields.io/aur/votes/prometheus-x509-certificate-exporter)
 
 This repository contains build files to build the Arch Linux package `prometheus-x509-certificate-exporter`. Instead of
