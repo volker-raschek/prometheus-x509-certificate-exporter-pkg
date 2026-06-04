@@ -2,7 +2,7 @@
 
 pkgname=prometheus-x509-certificate-exporter
 _pkgname=x509-certificate-exporter
-pkgver=3.19.1 # renovate: datasource=github-releases depName=enix/x509-certificate-exporter extractVersion='^v?(?<version>.*)$'
+pkgver=4.0.0 # renovate: datasource=github-releases depName=enix/x509-certificate-exporter extractVersion='^v?(?<version>.*)$'
 pkgrel=1
 pkgdesc="metric exporter for x509 certificates"
 arch=('aarch64' 'x86_64' 'riscv64')
@@ -13,30 +13,30 @@ backup=(
 )
 
 source_aarch64=(
-  "${pkgname}-${pkgver}-linux-aarch64.tar.gz::https://github.com/enix/x509-certificate-exporter/releases/download/v${pkgver}/${_pkgname}-linux-arm64.tar.gz"
+  "${pkgname}-${pkgver}-linux-aarch64.tar.gz::https://github.com/enix/x509-certificate-exporter/releases/download/v${pkgver}/${_pkgname}-v${pkgver}-linux-arm64.tar.gz"
   'prometheus-x509-certificate-exporter'
   'systemd.service'
 )
 
 source_riscv64=(
-  "${pkgname}-${pkgver}-linux-riscv64.tar.gz::https://github.com/enix/x509-certificate-exporter/releases/download/v${pkgver}/${_pkgname}-linux-riscv64.tar.gz"
+  "${pkgname}-${pkgver}-linux-riscv64.tar.gz::https://github.com/enix/x509-certificate-exporter/releases/download/v${pkgver}/${_pkgname}-v${pkgver}-linux-riscv64.tar.gz"
   'prometheus-x509-certificate-exporter'
   'systemd.service'
 )
 
 source_x86_64=(
-  "${pkgname}-${pkgver}-linux-x86_64.tar.gz::https://github.com/enix/x509-certificate-exporter/releases/download/v${pkgver}/${_pkgname}-linux-amd64.tar.gz"
+  "${pkgname}-${pkgver}-linux-x86_64.tar.gz::https://github.com/enix/x509-certificate-exporter/releases/download/v${pkgver}/${_pkgname}-v${pkgver}-linux-amd64.tar.gz"
   'prometheus-x509-certificate-exporter'
   'systemd.service'
 )
 
-sha256sums_aarch64=('614b127e56f8b008070f43f6ea5899e2c43264ca1fef2e363bc2bfcbc4f9260e'
+sha256sums_aarch64=('f73947bfd4a7e08f1489fee25f96bc7fff8aed45dbe40a563de79ff9c841e3da'
                     '166c40406cf301f817b33d62529bcea00d4c93d278161b0f2e25b268d9a51083'
                     'f20db363daf15a32040781fc5b1972b178725e4d5021c47aa11dd65a862fc837')
-sha256sums_x86_64=('4ccc43f593bc6aafa435771fa8622854f10a645e974d923a93072c5eba762b89'
+sha256sums_x86_64=('ce172711cf66fd9de32320395f9d6073821bc5dfdf434afc9d3894da30aedfd8'
                    '166c40406cf301f817b33d62529bcea00d4c93d278161b0f2e25b268d9a51083'
                    'f20db363daf15a32040781fc5b1972b178725e4d5021c47aa11dd65a862fc837')
-sha256sums_riscv64=('d24eb885f418ffb5abb81c9aa8e42cee5e43c63043d556349ae5cb058aed2455'
+sha256sums_riscv64=('372309fece5d9612294b6d154d348c2fff4c8d295cc0ce3b1452badcbe6d8505'
                     '166c40406cf301f817b33d62529bcea00d4c93d278161b0f2e25b268d9a51083'
                     'f20db363daf15a32040781fc5b1972b178725e4d5021c47aa11dd65a862fc837')
 
