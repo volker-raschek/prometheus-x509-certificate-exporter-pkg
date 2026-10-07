@@ -2,7 +2,7 @@
 
 pkgname=prometheus-x509-certificate-exporter
 _pkgname=x509-certificate-exporter
-pkgver=4.0.0 # renovate: datasource=github-releases depName=enix/x509-certificate-exporter extractVersion='^v?(?<version>.*)$'
+pkgver=4.2.0 # renovate: datasource=github-releases depName=enix/x509-certificate-exporter extractVersion='^v?(?<version>.*)$'
 pkgrel=1
 pkgdesc="metric exporter for x509 certificates"
 arch=('aarch64' 'x86_64' 'riscv64')
